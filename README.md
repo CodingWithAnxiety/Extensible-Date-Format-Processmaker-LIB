@@ -124,7 +124,12 @@ Both of these strings will format the date in the month/day/year format.
 ## External documentation
 
 [JavaScript in Dynaforms](https://wiki.processmaker.com/3.2/JavaScript_Functions_and_Methods)
-[External Libraries in Dynaforms](https://wiki.processmaker.com/3.0/Form#External_Libs)## How to Modify DfEx.js Library
+
+[External Libraries in Dynaforms](https://wiki.processmaker.com/3.0/Form#External_Libs)
+
+[How to use JsDelivr](https://chriscoyier.net/2022/05/17/make-your-own-little-easy-to-update-cdn/)
+
+## How to Modify DfEx.js Library
 
 Assuming you are already on the repository for DfEx.js, follow these steps to modify and use the library:
 
