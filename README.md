@@ -19,7 +19,7 @@ This is a basic LIB for formatting dates with various options. It is highly exte
 
 ---
 
-This is a basic API for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
+This is a basic LIB for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
 
 ---
 
