@@ -38,12 +38,15 @@ script.onload = function() {
 - Highly extensible
 - Designed for ProcessMaker
 - Easily applied
+- Easily modifiable LIB
+- Designed for clients with little-to-no programming knowledge
+- Performance-tested
 
 ## Documentation
 
 ---
 
-This is a basic API for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
+This is a basic LIB for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
 
 ---
 
