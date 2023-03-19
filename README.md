@@ -8,29 +8,24 @@ This is a basic LIB for formatting dates with various options. It is highly exte
 
 ## Installation
 
-Add this library to your Processmaker External Libs with this link;
+Add this code to your Processmaker Dynaform Javascript;
 
-```
-https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@latest/DfEx.js
-```
-If you have made your own repo with your own DfEx.js file, you will copy that jsdelivr link.
-
-
-Define the dateFormat variable in `Designer --> Dynaform --> Form --> Javascript`
-
-A defined dateFormat looks like;
 ```js
-var dateFormat = "Df_mm/Df_dd/Df_yyyy";
+// Define the desired format here. Use documentation for refrence. Modifiable, but required.
+var dateFormat = "DfEx_mm/DfEx_dd/DfEx_yyyy";
+
+// Load the external library. REQUIRED.
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@latest/DfEx.js';
+document.head.appendChild(script);
+
+// Wait for the library to load and then format the date. REQUIRED.
+script.onload = function() {
+  // Get the current date in the desired format. Placeholder, Replace with whatever you need.
+  $("#TheDate").text(formattedDate);;
+};
 ```
-
-
-Lastly, call the formattedDate function.
-
-A called formattedDate function looks like;
-```js
-$("#TheDate").text(formattedDate);
-```
-
 
 ## Authors
 
@@ -173,9 +168,5 @@ Assuming you are already on the repository for DfEx.js, follow these steps to mo
 ### Step 7: Use the modified DfEx.js in ProcessMaker
 
 1. Open the ProcessMaker dynaform that you want to apply the modified DfEx.js to.
-2. In the form editor, go to the "Properties" panel and find the "External libs" property.
-3. Copy and paste your JsDelivr link into the External libs. Be sure to seperate it from other libs with a commma (,)
-4. Save the changes to the form.
-
-Refer to Section 2, Installation of the DfEx.js documentation for more instructions on how to install from here on.
-
+2. In the form editor, go to the "Properties" panel and find the "Javascript" property.
+3. Refer to Section 2, Installation of the DfEx.js documentation for more instructions on how to install from here on.

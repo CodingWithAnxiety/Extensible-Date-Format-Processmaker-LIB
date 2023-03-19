@@ -4,7 +4,6 @@ Refer to github documentation (https://github.com/NekoFoox/Extensible-Date-Forma
 This is the base LIB, Which contains all the default dates, functions, etc.
 
 Refer to DfExExample.js for an example of how this would function
-
 */
 
 // Get the current date
