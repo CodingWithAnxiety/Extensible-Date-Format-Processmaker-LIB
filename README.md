@@ -11,7 +11,7 @@ This is a basic LIB for formatting dates with various options. It is highly exte
 Add this library to your Processmaker External Libs with this link;
 
 ```
-https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@main/DfEx.js
+https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@latest/DfEx.js
 ```
 If you have made your own repo with your own DfEx.js file, you will copy that jsdelivr link.
 
