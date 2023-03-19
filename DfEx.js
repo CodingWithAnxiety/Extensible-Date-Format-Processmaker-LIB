@@ -1,79 +1,9 @@
 /*
-Date Format, Extensible API
-(Aka, Extensible Date API)
-DfEx.JS
+Refer to github documentation (https://github.com/NekoFoox/Extensible-Date-Format-Processmaker-LIB/blob/main/README.md)
 
-Syntax: [DfEx_] or [Df_]
+This is the base LIB, Which contains all the default dates, functions, etc.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-This is a basic API for formatting dates with various options. It is highly extensible, preformance-tested, well-documented, and easy-to-understand.
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-A date-format type is called a "Date-Case". You can create Date-Cases by simply adding a new 
-
-        case "DfEx_h":
-        case "Df_h":
-		
-Function to the replaceDf function. For example, if I wanted to get the time in Unix epoch, I could do;
-
-case "DfEx_ms":
-case "Df_ms":
-    return currentDate.getTime();
-	
-"DfEx_ms/Df_ms" = 1679249954730
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-All the below are documented date-cases that come pre-programmed;
-
-The Df_ Syntax
-
-The Df_ syntax is used to format dates with a fixed set of placeholders. The following placeholders can be used to format the date:
-
-	Df_yyyy - shows the year with four numbers (e.g. it shows the year 2008 as 2008)
-	Df_yy - shows the year with two numbers (e.g. it shows the year 2008 as 08)
-	Df_mm - shows the month with two numbers (e.g. it shows June as 06)
-	Df_m - shows the month with a simple number (e.g. it shows June as 6)
-	Df_M - shows the full word for the month in the selected language (e.g. if the month is June, it shows June in English and junio in Spanish)
-	Df_dd - shows the day of the month with two numbers (e.g. the first day of the month is 01)
-	Df_d - shows the day of the month with a simple number (e.g. the first day of the month is 1)
-	Df_D - shows the full word for the day in the selected language (e.g. if the day is Monday, it shows Monday in English and Lunes in Spanish)
-	Df_h - shows the hour in a 24-hour clock format with two numbers (e.g. 2 PM is 14)
-	Df_H - shows the hour in a 12-hour clock format with two numbers (e.g. 2 PM is 02)
-	Df_i - shows the minutes with two numbers (e.g. the first minute is 01)
-	Df_s - shows the seconds with two numbers (e.g. the first second is 01)
-	Df_tz - shows "AM" or "PM" based on the time of day (e.g. 2 PM is "PM")
-
-The DfEx_ Syntax
-
-The DfEx_ syntax is exactly the same as Df_, but simply here for the sake of compatability.
-
-	DfEx_yyyy - shows the year with four numbers (e.g. it shows the year 2008 as 2008)
-	DfEx_yy - shows the year with two numbers (e.g. it shows the year 2008 as 08)
-	DfEx_mm - shows the month with two numbers (e.g. it shows June as 06)
-	DfEx_m - shows the month with a simple number (e.g. it shows June as 6)
-	DfEx_M - shows the full word for the month in the selected language (e.g. if the month is June, it shows June in English and junio in Spanish)
-	DfEx_dd - shows the day of the month with two numbers (e.g. the first day of the month is 01)
-	DfEx_d - shows the day of the month with a simple number (e.g. the first day of the month is 1)
-	DfEx_D - shows the full word for the day in the selected language (e.g. if the day is Monday, it shows Monday in English and Lunes in Spanish)
-	DfEx_h - shows the hour in a 24-hour clock format with two numbers (e.g. 2 PM is 14)
-	DfEx_H - shows the hour in a 12-hour clock format with two numbers (e.g. 2 PM is 02)
-	DfEx_i - shows the minutes with two numbers (e.g. the first minute is 01)
-	DfEx_s - shows the seconds with two numbers (e.g. the first second is 01)
-	DfEx_tz - shows "AM" or "PM" based on the time of day (e.g. 2 PM is "PM")
-
-The Df_ and DfEx_ syntax can be used interchangeably in the same string, allowing for flexible and customized formatting of dates. For example, the following two strings will give the same result:
-
-    DfEx_mm/Df_dd/DfEx_yyyy
-    Df_mm/Df_dd/Df_yyyy
-	
-Both of these strings will format the date in the month/day/year format.
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-The code below is example code. It is used to display the current date and time to a label with the form ID of #TheDate. You can disect this code based on the documents as needed as repurpose it
+Refer to DfExExample.js for an example of how this would function
 
 */
 
@@ -175,10 +105,3 @@ function replaceDf(match) {
             return match;
     }
 }
-
-// Build the formatted date string based on the selected format
-var formattedDate = dateFormat
-    .replace(/(DfEx|Df)_[A-Za-z]+/g, replaceDf);
-
-// Set the text of the subtitle to the formatted date
-$("#TheDate").text(formattedDate);
