@@ -6,8 +6,8 @@ The code below is example code. It is used to display the current date and time 
 If you do not know what changed, refer to the bottom of the page.
 */
 
-// Define the desired format using the placeholders described above, including any DfEx extensions
-var dateFormat = "DfEx_MM/DD/YYYY";
+// Define the desired format using the placeholders described in the Readme. Be sure you move this into the Javascript box on processmaker after adding DfXe into external libs.
+var dateFormat = "Df_mm/dd/yyyy";
 //-----
 
 // Get the current date
@@ -112,5 +112,5 @@ function replaceDf(match) {
 var formattedDate = dateFormat
     .replace(/(DfEx|Df)_[A-Za-z]+/g, replaceDf);
 
-// Set the text of the subtitle to the formatted date
+// Set the text of the subtitle to the formatted date. Be sure to also remove this code from here and move it into your Javascript box on Processmaker
 $("#TheDate").text(formattedDate);

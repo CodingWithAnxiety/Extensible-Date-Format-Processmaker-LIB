@@ -3,6 +3,35 @@
 
 This is a basic LIB for formatting dates with various options. It is highly extensible, preformance-tested, well-documented, and easy-to-understand. It was designed with the GMU project in mind for extra style-points on good-looking dates.
 
+
+
+
+## Installation
+
+Add this library to your Processmaker External Libs with this link;
+
+```
+https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@main/DfEx.js
+```
+If you have made your own repo with your own DfEx.js file, you will copy that jsdelivr link.
+
+
+Define the dateFormat variable in `Designer --> Dynaform --> Form --> Javascript`
+
+A defined dateFormat looks like;
+```js
+var dateFormat = "Df_mm/Df_dd/Df_yyyy";
+```
+
+
+Lastly, call the formattedDate function.
+
+A called formattedDate function looks like;
+```js
+$("#TheDate").text(formattedDate);
+```
+
+
 ## Authors
 
 - [The Lovebecile](https://github.com/NekoFoox)
@@ -19,7 +48,7 @@ This is a basic LIB for formatting dates with various options. It is highly exte
 
 ---
 
-This is a basic LIB for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
+This is a basic API for formatting dates with various options. It is highly extensible, performance-tested, well-documented, and easy-to-understand.
 
 ---
 
@@ -90,4 +119,58 @@ The `Df_` and `DfEx_` syntax can be used interchangeably in the same string, all
 
 Both of these strings will format the date in the month/day/year format.
 
+
+
+## External documentation
+
+[JavaScript in Dynaforms](https://wiki.processmaker.com/3.2/JavaScript_Functions_and_Methods)
+[External Libraries in Dynaforms](https://wiki.processmaker.com/3.0/Form#External_Libs)## How to Modify DfEx.js Library
+
+Assuming you are already on the repository for DfEx.js, follow these steps to modify and use the library:
+
+### Step 1: Fork the repository
+
+1. Click on the "Fork" button in the top-right corner of the repository page to create a copy of the repository in your own GitHub account.
+2. Wait for the forking process to complete.
+
+### Step 2: Clone your fork
+
+1. In the repository page, click on the "Code" button and copy the HTTPS URL.
+2. Open your terminal or Git Bash and navigate to the directory where you want to clone the repository.
+3. Type `git clone` followed by the copied URL and press Enter.
+4. The repository will be cloned to your local machine.
+
+### Step 3: Modify DfEx.js
+
+1. Open the cloned repository in your code editor of choice.
+2. Find the DfEx.js file in the root of the repository and make any necessary modifications.
+3. Save the changes.
+
+### Step 4: Push changes to your fork
+
+1. In your terminal or Git Bash, navigate to the cloned repository.
+2. Add and commit your changes using the commands `git add .` and `git commit -m "Your commit message here"`.
+3. Push your changes to your fork using the command `git push`.
+
+### Step 5: Get the raw link for DfEx.js
+
+1. Go to your forked repository on GitHub and navigate to the DfEx.js file.
+2. Click on the "Raw" button to get the raw link to the file.
+3. Copy this link.
+
+### Step 6: Use JsDelivr to host the modified DfEx.js file
+
+1. Go to the JsDelivr website (https://www.jsdelivr.com/github).
+2. Paste the raw link to DfEx.js into the "Paste a GitHub link here" field.
+3. The lower field should auto-fill with your new link.
+4. Copy the link that JsDelivr generates for the file.
+
+### Step 7: Use the modified DfEx.js in ProcessMaker
+
+1. Open the ProcessMaker dynaform that you want to apply the modified DfEx.js to.
+2. In the form editor, go to the "Properties" panel and find the "External libs" property.
+3. Copy and paste your JsDelivr link into the External libs. Be sure to seperate it from other libs with a commma (,)
+4. Save the changes to the form.
+
+Refer to Section 2, Installation of the DfEx.js documentation for more instructions on how to install from here on.
 

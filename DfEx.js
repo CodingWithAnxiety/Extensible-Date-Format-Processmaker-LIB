@@ -7,10 +7,6 @@ Refer to DfExExample.js for an example of how this would function
 
 */
 
-// Define the desired format using the placeholders described above, including any DfEx extensions
-var dateFormat = "DfEx_MM/DD/YYYY";
-//-----
-
 // Get the current date
 var currentDate = new Date();
 //-----
@@ -105,3 +101,7 @@ function replaceDf(match) {
             return match;
     }
 }
+
+// Build the formatted date string based on the selected format
+var formattedDate = dateFormat
+    .replace(/(DfEx|Df)_[A-Za-z]+/g, replaceDf);
