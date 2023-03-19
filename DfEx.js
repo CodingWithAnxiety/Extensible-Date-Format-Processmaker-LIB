@@ -7,6 +7,14 @@ Refer to DfExExample.js for an example of how this would function
 
 */
 
+var waitForDateFormat = setInterval(function() {
+    if (typeof dateFormat !== 'undefined') {
+      clearInterval(waitForDateFormat);
+      DfEx.updateDateFormat(dateFormat);
+    }
+  }, 100);
+  
+
 // Get the current date
 var currentDate = new Date();
 //-----
