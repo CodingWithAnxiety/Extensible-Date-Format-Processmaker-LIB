@@ -2,7 +2,6 @@
 Be sure to add the below code to your JS!
 
 On the script.onload = function() {, add your own function. What is currently there is a placeholder.
-
 */
 
 
@@ -12,7 +11,7 @@ var dateFormat = "DfEx_mm/DfEx_dd/DfEx_yyyy";
 // Load the external library
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src = 'https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@latest/DfEx.js';
+script.src = 'https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@1/Mins/DfEx.min.js';
 document.head.appendChild(script);
 
 // Wait for the library to load and then format the date
