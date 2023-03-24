@@ -4,10 +4,10 @@
  * You're at the minified version of DfEx.js. The below code is not readable- but if you want the readable version, refer to the Original File or Original Repo
  * 
  * ! Minified Version of DfEx.js for faster deployment !
- * Minified file link : https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@1/Mins/DfEx.min.js
- * Original file : https://cdn.jsdelivr.net/gh/NekoFoox/Extensible-Date-Format-Processmaker-LIB@1.1.10/DfEx.js
- * Original repo : https://github.com/NekoFoox/Extensible-Date-Format-Processmaker-LIB
+ * Minified file link : https://cdn.jsdelivr.net/gh/CodingWithAnxiety/Extensible-Date-Format-Processmaker-LIB@1/Mins/DfEx.min.js
+ * Original file : https://cdn.jsdelivr.net/gh/CodingWithAnxiety/Extensible-Date-Format-Processmaker-LIB@1.1.11/DfEx.js
+ * Original repo : https://github.com/CodingWithAnxiety/Extensible-Date-Format-Processmaker-LIB
  * Title : DfEx.js
  * Major vers : 1
- * Minor vers 1.1.10
+ * Minor vers 1.1.11
  */
